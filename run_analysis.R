@@ -42,7 +42,6 @@ read_data <- function() {
 }
 
 extract_mean_and_std_columns <- function(dataframe) {
-    #features <- read.table("UCI HAR Dataset/features.txt")
     column_names <- colnames(dataframe)
     
     mean_cols <- sapply(column_names, function(x) grepl("mean()", x, fixed=TRUE))
@@ -51,12 +50,10 @@ extract_mean_and_std_columns <- function(dataframe) {
     other <- sapply(column_names, function(x) x %in% c("subject_id", "activity")) 
     
     extracted <- dataframe[, (mean_cols | std_cols | other)]
-    #colnames(extracted) <- features[,2][(mean_cols | std_cols), 2]
     extracted
 }
 
 run_analysis <- function() {
-    # 1. Read data.
     data <- read_data()
     extracted <- extract_mean_and_std_columns(data)
     
