@@ -70,5 +70,5 @@ run_analysis <- function() {
     colnames(tidy)[1] <- "subject_id"
     colnames(tidy)[2] <- "activity"
     
-    write.csv(tidy, file = "tidy_dataset.csv")
+    write.table(tidy, file = "tidy_dataset.txt", row.name = FALSE)
 }

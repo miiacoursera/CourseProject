@@ -1,6 +1,6 @@
 # CODEBOOK
 
-The file tidy_dataset.csv contains 180 observation of 68 variables. It is formed from the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The file tidy_dataset.txt contains 180 observation of 68 variables. It is formed from the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 * subject_id
     identifies the subject who performed the test
